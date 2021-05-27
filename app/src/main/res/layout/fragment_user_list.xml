@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90CAF9"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:outlineProvider="none">
+
+    <Button
+        android:id="@+id/openAddUserActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:scrollbarThumbHorizontal="@android:color/background_dark"
+        android:scrollbarTrackHorizontal="@android:color/background_dark"
+        android:text="Добавить пользователя"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="50dp"
+        android:fadeScrollbars="false"
+        android:fadingEdge="horizontal"
+        android:forceHasOverlappingRendering="true"
+        android:scrollbarSize="50dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarTrackHorizontal="@android:color/background_dark"
+        android:scrollbars="horizontal"
+        android:soundEffectsEnabled="false"
+        card_view:fastScrollHorizontalThumbDrawable="@android:color/background_dark"
+        card_view:fastScrollHorizontalTrackDrawable="@android:color/background_dark">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
